@@ -6,7 +6,7 @@ Compilador Léxico Gráfico Básico para Lenguaje Dart
 
 ![](RackMultipart20201027-4-1lm0f6e_html_3d7e6bf4c0671732.gif)
 
-Universidad De Antioquia
+Universidad De Antioquia.
 
 Teoría de Lenguajes y Laboratorio
 
