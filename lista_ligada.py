@@ -13,13 +13,13 @@ class Nodo:
     SIMBOLOS_IGUAL = {'asi': '[=]', }
     SIMBOLOS_BOLEANO = {'tru': 'True',
                         'fal': 'False'}
-    SIMBOLOS_SEPARADOR = {'apt': '[\(]',
+    SIMBOLOS_SEPARADOR_PAREJA = {'apt': '[\(]',
                           'cpt': '[\)]',
                           'act': '[\[]',
                           'cct': '[\]]',
                           'alv': '[\}]',
                           'clv': '[\{]',
-                          }
+                                 }
     SIMBOLOS_MATEMATICO = {'add': '[+]',
                            'sub': '[-]',
                            'mul': '[*]',
@@ -127,7 +127,7 @@ class Nodo:
             return 'igu'
         elif re.search(pattern=f"^({'|'.join(self.SIMBOLOS_BOLEANO.values())})$", string=self.dato):
             return 'bol'
-        elif re.search(pattern=f"^({'|'.join(self.SIMBOLOS_SEPARADOR.values())})$", string=self.dato):
+        elif re.search(pattern=f"^({'|'.join(self.SIMBOLOS_SEPARADOR_PAREJA.values())})$", string=self.dato):
             return 'sep'
         elif re.search(pattern=f"^({'|'.join(self.SIMBOLOS_MATEMATICO.values())})$", string=self.dato):
             return 'opr'
